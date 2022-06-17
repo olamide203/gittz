@@ -24,7 +24,7 @@ Gittz is a web application which integrates with the github REST API making it e
 ![](./packages/client/public/images/meta.png)
 ### Links
 
-- Live Site URL: [Add live site URL here](https://gittz.netify.live)
+- Live Site URL: [gittz](https://gittz.netify.live)
 
 ### Built with
 - [React](https://reactjs.org/) - JS library
@@ -41,8 +41,7 @@ yarn run dev
 ```
 
 ## Author
-Olamide Atitebi
-
+👤 **Olamide Atitebi**
 -[website](https://github.com/olamide203)
 -[twitter](https://twitter.com/Olamide_farouq)
 -[github](https://github.com/olamide203)
