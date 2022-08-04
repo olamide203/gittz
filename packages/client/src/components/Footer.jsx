@@ -5,7 +5,7 @@ import { MdCopyright } from "react-icons/md";
 function Footer() {
   const footerYear = new Date().getFullYear();
   return (
-    <footer className="attribution  bg-gray-700 text-primary-content">
+    <footer className="attribution bg-gray-700 text-primary-content w-screen">
       <FaSlackHash className="text-9xl mx-auto" />
       <p>
         Copyright

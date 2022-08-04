@@ -40,7 +40,7 @@ function App() {
           onClick={closeMenu}
         ></div>
       )}
-      <main className="grid min-w-full h-max">
+      <main className="w-screen h-max">
         <Outlet />
       </main>
 
