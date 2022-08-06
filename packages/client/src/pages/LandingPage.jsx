@@ -80,14 +80,14 @@ function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="bg-[#fafafa] px-10 py-20 w-full grid gap-10">
+      <div className="bg-[#fafafa] px-10 py-20 w-full grid gap-10 text-slate-700">
         <div className="grid bg-slate-100 p-5 rounded-xl justify-center max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-auto max-w-5xl gap-8">
-            <div>
+            <div className="w-full">
               <img
                 src="/images/share-link.svg"
                 alt="hello"
-                className="max-h-96 w-full sm:w-72 md:w-full"
+                className="aspect-square max-h-96 w-full sm:w-72"
               />
             </div>
             <div className="justify-self-center self-center">
@@ -113,7 +113,7 @@ function LandingPage() {
               <img
                 src="/images/search.svg"
                 alt=""
-                className="max-h-96 w-full sm:w-72 md:w-full"
+                className="max-h-96 w-full sm:w-72"
               />
             </div>
           </div>
@@ -124,7 +124,7 @@ function LandingPage() {
               <img
                 src="/images/social-dashboard.svg"
                 alt=""
-                className="max-h-96 w-full sm:w-72 md:w-full"
+                className="max-h-96 h-full w-full sm:w-72"
               />
             </div>
             <div className="justify-self-center self-center">
@@ -137,26 +137,40 @@ function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="grid justify-center align-center bg-[url('/images/blob-3.svg')] aspect-square lg:aspect-[900/450] bg-center bg-no-repeat bg-contain relative text-white px-10 gap-10 max-w-full">
-        <div className="self-end">
-          <h3 className="font-bold md:text-4xl text-2xl sm:text-3xl h-auto ">
-            Start using gittz today!
-          </h3>
-        </div>
-        <div className=" grid grid-cols-2 justify-center align-center">
-          <NavLink
-            to={"/login"}
-            className="capitalize btn btn-lg mr-3 text-white border-none px-10 rounded"
-          >
-            Login
-          </NavLink>
+      <div className="bg-[url('/images/wave-dark.svg')] aspect-square lg:aspect-[2/1] bg-center bg-no-repeat bg-cover relative text-white px-10 gap-10 max-w-full -top-20 pt-96">
+        <div className="">
+          <div className=" grid grid-cols-1 md:grid-cols-2 justify-center align-center gap-10">
+            <div className="justify-self-end hide md:block">
+              <div class="mockup-phone border-none -rotate-[5deg]">
+                <div class="camera"></div>
+                <div class="display">
+                  <div class="artboard artboard-demo phone-1 bg-[url(/images/phone.png)] bg-contain"></div>
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-10">
+              <h3 className="font-bold md:text-5xl text-2xl sm:text-3xl justify-self-center md:self-end col-span-2">
+                Give
+                <span className="relative z-30 inline-block before:absolute before:bg-sky-700 before:block before:-inset-1 before:skew-y-[-3deg] mx-1.5">
+                  <span className="relative">gittz</span>
+                </span>{" "}
+                a try today
+              </h3>
 
-          <NavLink
-            to={"/signup"}
-            className="capitalize btn btn-lg text-white border-none rounded"
-          >
-            Signup
-          </NavLink>
+              <NavLink
+                to={"/login"}
+                className="capitalize btn btn-md w-max text-white border-none px-10 rounded justify-self-end"
+              >
+                Login
+              </NavLink>
+              <NavLink
+                to={"/signup"}
+                className="capitalize btn btn-md w-max px-10 text-white border-none rounded"
+              >
+                Signup
+              </NavLink>
+            </div>
+          </div>
         </div>
       </div>
     </div>
