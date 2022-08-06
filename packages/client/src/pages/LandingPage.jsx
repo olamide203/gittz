@@ -137,14 +137,14 @@ function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="bg-[url('/images/wave-dark.svg')] aspect-square lg:aspect-[2/1] bg-center bg-no-repeat bg-cover relative text-white px-10 gap-10 max-w-full -top-20 pt-96">
+      <div className="bg-[url('/images/wave-dark.svg')] aspect-square lg:aspect-[2/1] bg-center bg-no-repeat bg-cover relative text-white px-10 gap-10 max-w-full -top-10 sm:-top-20 pt-44 sm:pt-72">
         <div className="">
           <div className=" grid grid-cols-1 md:grid-cols-2 justify-center align-center gap-10">
             <div className="justify-self-end hide md:block">
-              <div class="mockup-phone border-none -rotate-[5deg]">
-                <div class="camera"></div>
-                <div class="display">
-                  <div class="artboard artboard-demo phone-1 bg-[url(/images/phone.png)] bg-contain"></div>
+              <div className="mockup-phone border-none -rotate-[5deg]">
+                <div className="camera"></div>
+                <div className="display">
+                  <div className="artboard artboard-demo phone-1 bg-[url(/images/phone.png)] bg-contain"></div>
                 </div>
               </div>
             </div>
