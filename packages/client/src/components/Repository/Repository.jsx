@@ -96,7 +96,7 @@ function Repository({ item, mutateKey }) {
   };
   return (
     <div className="grid bg-neutral p-4 rounded gap-4 shadow">
-      <h3 className="text-md">{item.name}</h3>
+      <h3 className="text-md break-all">{item.name}</h3>
       {item.description && <p className="text-sm">{item.description}</p>}
       {item.topics.length > 0 && (
         <div className="flex flex-row gap-2 flex-wrap w-full">
@@ -116,7 +116,7 @@ function Repository({ item, mutateKey }) {
             href={item.homepage}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-circle bg-blue-600 text-white mr-2"
+            className="btn btn-circle bg-blue-600 text-white mr-2 mb-2"
           >
             <Link2Icon className="text-xl" />{" "}
           </a>
@@ -126,7 +126,7 @@ function Repository({ item, mutateKey }) {
             href={item.html_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-circle bg-blue-600 text-white mr-2"
+            className="btn btn-circle bg-blue-600 text-white mr-2 mb-2"
           >
             <FaGithub className="text-xl" />{" "}
           </a>
