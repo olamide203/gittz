@@ -55,7 +55,7 @@ function Search() {
     setCurrentPage(e.selected + 1);
   };
   return (
-    <div className="p-10 text-white h-screen overflow-scroll">
+    <div className="p-4 sm:p-10 text-white h-screen overflow-scroll">
       <SearchForm />
 
       {result && (

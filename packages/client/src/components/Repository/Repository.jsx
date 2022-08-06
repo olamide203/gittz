@@ -100,14 +100,19 @@ function Repository({ item, mutateKey }) {
       {item.description && <p className="text-sm">{item.description}</p>}
       {item.topics.length > 0 && (
         <div className="flex flex-row gap-2 flex-wrap w-full">
-          {item.topics.slice(0, 3).map((topic, index) => (
-            <div
-              key={index}
-              className="badge badge-lg bg-blue-600 text-white border-none"
-            >
-              {topic}
-            </div>
-          ))}
+          {item.topics
+            .filter((topic) => {
+              return topic.length <= 20;
+            })
+            .slice(0, 3)
+            .map((topic, index) => (
+              <div
+                key={index}
+                className="badge badge-lg bg-blue-600 text-white border-none h-fit"
+              >
+                <span className="">{topic}</span>
+              </div>
+            ))}
         </div>
       )}
       <div className="mt-4">
