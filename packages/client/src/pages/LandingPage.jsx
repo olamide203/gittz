@@ -165,7 +165,7 @@ function LandingPage() {
               </NavLink>
               <NavLink
                 to={"/signup"}
-                className="capitalize btn btn-md w-max px-10 text-white border-none rounded"
+                className="capitalize btn btn-md w-max bg-blue-700 text-white border-none px-10 rounded hover:scale-95"
               >
                 Signup
               </NavLink>
