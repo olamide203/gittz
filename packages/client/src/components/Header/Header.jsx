@@ -36,7 +36,7 @@ function Header({ toggleMenu, isVisible, closeMenu }) {
           <span className="hide sm:inline-block">gitzz</span>
         </NavLink>
       </div>
-      {!user && (
+      {/* {!user && (
         <button
           className="nav-toggle z-50"
           aria-controls="navigation__list"
@@ -47,7 +47,7 @@ function Header({ toggleMenu, isVisible, closeMenu }) {
           {!isVisible && <AiOutlineMenu className="text-4xl" />}
           {isVisible && <IoMdClose className="text-4xl" />}
         </button>
-      )}
+      )} */}
       <nav>
         <ul
           id="navigation__list"
